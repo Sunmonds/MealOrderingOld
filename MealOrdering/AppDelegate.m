@@ -2,15 +2,17 @@
 //  AppDelegate.m
 //  MealOrdering
 //
-//  Created by sunlei on 11-11-11.
-//  Copyright __MyCompanyName__ 2011年. All rights reserved.
+//  Created by Sun on 12-3-8.
+//  Copyright __MyCompanyName__ 2012年. All rights reserved.
 //
 
 #import "cocos2d.h"
 
 #import "AppDelegate.h"
 #import "GameConfig.h"
-#import "TestScene.h"
+#import "MainMenuScene.h"
+#import "HelloWorldLayer.h"
+
 #import "RootViewController.h"
 
 @implementation AppDelegate
@@ -25,20 +27,19 @@
 	// Uncomment the following code if you Application only supports landscape mode
 	//
 #if GAME_AUTOROTATION == kGameAutorotationUIViewController
-	
-	//	CC_ENABLE_DEFAULT_GL_STATES();
-	//	CCDirector *director = [CCDirector sharedDirector];
-	//	CGSize size = [director winSize];
-	//	CCSprite *sprite = [CCSprite spriteWithFile:@"Default.png"];
-	//	sprite.position = ccp(size.width/2, size.height/2);
-	//	sprite.rotation = -90;
-	//	[sprite visit];
-	//	[[director openGLView] swapBuffers];
-	//	CC_ENABLE_DEFAULT_GL_STATES();
+
+//	CC_ENABLE_DEFAULT_GL_STATES();
+//	CCDirector *director = [CCDirector sharedDirector];
+//	CGSize size = [director winSize];
+//	CCSprite *sprite = [CCSprite spriteWithFile:@"Default.png"];
+//	sprite.position = ccp(size.width/2, size.height/2);
+//	sprite.rotation = -90;
+//	[sprite visit];
+//	[[director openGLView] swapBuffers];
+//	CC_ENABLE_DEFAULT_GL_STATES();
 	
 #endif // GAME_AUTOROTATION == kGameAutorotationUIViewController	
 }
-
 - (void) applicationDidFinishLaunching:(UIApplication*)application
 {
 	// Init the window
@@ -111,7 +112,7 @@
 	[self removeStartupFlicker];
 	
 	// Run the intro Scene
-	[[CCDirector sharedDirector] runWithScene: [TestScene scene]];
+	[[CCDirector sharedDirector] runWithScene: [MainMenuScene scene]];
 }
 
 
