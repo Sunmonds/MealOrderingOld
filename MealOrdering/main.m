@@ -2,8 +2,8 @@
 //  main.m
 //  MealOrdering
 //
-//  Created by sunlei on 11-11-11.
-//  Copyright __MyCompanyName__ 2011年. All rights reserved.
+//  Created by Sun on 12-3-8.
+//  Copyright __MyCompanyName__ 2012年. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
